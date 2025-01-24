@@ -1,0 +1,34 @@
+<MODULE_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PROCESSORS/>
+  <MODULE_LIST>
+    <MODULE name="MODULE_1" id="0x11111111">
+      <MODULE_INFO>
+        <DATA_PORT_INFO>
+          <INPUT_PORTS max="0x4"/>
+          <OUTPUT_PORTS max="0x6"/>
+        </DATA_PORT_INFO>
+        <CONTROL_PORT_INFO>
+          <STATIC/>
+          <DYNAMIC/>
+        </CONTROL_PORT_INFO>
+        <CAPABILITIES/>
+        <SUPPORTEDCONTTYPES/>
+        <STACKSIZE stackSize="0x400"/>
+      </MODULE_INFO>
+      <PARAMETER_LIST>
+        <PARAMETER name="Parameter1" pid="0x11111199" maxSize="0x6" copySrc="0x12345678">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="a" type="unsigned short" typeUnSigned="true" byteSize="0x2" byteOffset="0x0" min="0x0" max="0xffff" default="0x0"/>
+          <CONFIG_ELEMENT name="b" type="unsigned short" typeUnSigned="true" byteSize="0x2" byteOffset="0x2" min="0x0" max="0xffff" default="0x0"
+            copySrc="element1"/>
+          <CONFIG_ELEMENT name="c" type="unsigned short" typeUnSigned="true" byteSize="0x2" byteOffset="0x4" min="0x0" max="0xffff" default="0x0"
+            copySrc="element2"/>
+        </PARAMETER>
+      </PARAMETER_LIST>
+    </MODULE>
+  </MODULE_LIST>
+</MODULE_DEF>

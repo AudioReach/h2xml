@@ -1,0 +1,205 @@
+<MODULE_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PROCESSORS/>
+  <MODULE_LIST>
+    <MODULE name="MODULE_1" id="0x11111111">
+      <MODULE_INFO>
+        <DATA_PORT_INFO>
+          <INPUT_PORTS max="0x4"/>
+          <OUTPUT_PORTS max="0x6"/>
+        </DATA_PORT_INFO>
+        <CONTROL_PORT_INFO>
+          <STATIC/>
+          <DYNAMIC/>
+        </CONTROL_PORT_INFO>
+        <CAPABILITIES/>
+        <SUPPORTEDCONTTYPES/>
+        <STACKSIZE stackSize="0x400"/>
+      </MODULE_INFO>
+      <PARAMETER_LIST>
+        <PARAMETER name="Parameter1" pid="0x11111199" maxSize="0x1a0">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="a" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x0" arrayElements="32" min="0x0" max="0xff"
+            arrayDefault="112233445566778899aabbccddeeff102030405060708090a0b0c0d0e0f00102"/>
+          <CONFIG_ELEMENT name="f" type="float" byteSize="0x4" byteOffset="0x20" arrayElements="32" min="-3.402823466E+38" max="3.402823466E+38"
+            arrayDefault="000000000000803f0000004000004040000080400000a0400000c0400000e04000000041000010410000204100003041000040410000504100006041000070410000804#[
+            #]10000884100009041000098410000a0410000a8410000b0410000b8410000c0410000c8410000d0410000d8410000e0410000e8410000f0410000f841"/>
+          <CONFIG_ELEMENT name="d" type="double" byteSize="0x8" byteOffset="0xa0" arrayElements="32" min="-1.797693135E+308" max="1.797693135E+308"
+            arrayDefault="0000000000000000000000000000f03f000000000000004000000000000008400000000000001040000000000000144000000000000018400000000000001c400000000#[
+            #]00000204000000000000022400000000000002440000000000000264000000000000028400000000000002a400000000000002c400000000000002e4000000000000030400000000000#[
+            #]003140000000000000324000000000000033400000000000003440000000000000354000000000000036400000000000003740000000000000384000000000000039400000000000003#[
+            #]a400000000000003b400000000000003c400000000000003d400000000000003e400000000000003f40"/>
+        </PARAMETER>
+        <PARAMETER name="Parameter2" pid="0x22222299" maxSize="0x0">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="a" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x0" arrayElements="32" min="0x0" max="0xff"
+            arrayDefault="112233445566778899aabbccddeeff102030405060708090a0b0c0d0e0f00102"/>
+          <CONFIG_ELEMENT name="s1" type="sStruct1_t" byteSize="0x8" byteOffset="0x20" arrayElements="4"
+            arrayDefault="112233445566778899aabbccddeeff102030405060708090a0b0c0d0e0f00102"/>
+          <CONFIG_ELEMENT name="s2" type="sStruct2_t" byteSize="0x20" byteOffset="0x40"
+            arrayDefault="112233445566778899aabbccddeeff102030405060708090a0b0c0d0e0f00102"/>
+          <CONFIG_ELEMENT name="b" type="char" byteSize="0x1" byteOffset="0x60" min="0x80" max="0x7f" default="0x44"/>
+          <CONFIG_ELEMENT name="c" type="long" byteSize="0x4" byteOffset="0x64" min="0x80000000" max="0x7fffffff" default="0x17654321"/>
+          <CONFIG_ELEMENT name="s3" type="sStruct1_t" byteSize="0x8" byteOffset="0x68" arrayElements="0"
+            arrayDefault="112233445566778899aabbccddeeff102030405060708090a0b0c0d0e0f00102"/>
+          <CONFIG_ELEMENT name="smix" type="sStructMix_t" byteSize="0x18" byteOffset="0x68" arrayDefault="000000000000f03f02000000000000000000404004000000"/>
+        </PARAMETER>
+        <PARAMETER name="Parameter3" pid="0x33333399" maxSize="0x0">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="a" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x0" arrayElements="32" min="0x0" max="0xff"
+            arrayDefault="112233445566778899aabbccddeeff102030405060708090a0b0c0d0e0f00102"/>
+          <CONFIG_ELEMENT name="s1" type="sStruct1_t" byteSize="0x8" byteOffset="0x20" arrayElements="4"
+            arrayDefault="112233445566778899aabbccddeeff102030405060708090a0b0c0d0e0f00102"/>
+          <CONFIG_ELEMENT name="s2_x" type="long" byteSize="0x4" byteOffset="0x40" arrayElements="8" min="0x80000000" max="0x7fffffff"
+            arrayDefault="112233445566778899aabbccddeeff102030405060708090a0b0c0d0e0f00102"/>
+          <CONFIG_ELEMENT name="b" type="char" byteSize="0x1" byteOffset="0x60" min="0x80" max="0x7f" default="0x44"/>
+          <CONFIG_ELEMENT name="c" type="long" byteSize="0x4" byteOffset="0x64" min="0x80000000" max="0x7fffffff" default="0x17654321"/>
+          <CONFIG_ELEMENT name="s3" type="sStruct1_t" byteSize="0x8" byteOffset="0x68" arrayElements="0"
+            arrayDefault="112233445566778899aabbccddeeff102030405060708090a0b0c0d0e0f00102"/>
+        </PARAMETER>
+        <PARAMETER name="Parameter4" pid="0x44444499" maxSize="0x0">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="a_1" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x0" min="0x0" max="0xff" default="0x11"/>
+          <CONFIG_ELEMENT name="a_2" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x1" min="0x0" max="0xff" default="0x22"/>
+          <CONFIG_ELEMENT name="a_3" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x2" min="0x0" max="0xff" default="0x33"/>
+          <CONFIG_ELEMENT name="a_4" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x3" min="0x0" max="0xff" default="0x44"/>
+          <CONFIG_ELEMENT name="a_5" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x4" min="0x0" max="0xff" default="0x55"/>
+          <CONFIG_ELEMENT name="a_6" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x5" min="0x0" max="0xff" default="0x66"/>
+          <CONFIG_ELEMENT name="a_7" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x6" min="0x0" max="0xff" default="0x77"/>
+          <CONFIG_ELEMENT name="a_8" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x7" min="0x0" max="0xff" default="0x88"/>
+          <CONFIG_ELEMENT name="a_9" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x8" min="0x0" max="0xff" default="0x99"/>
+          <CONFIG_ELEMENT name="a_10" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x9" min="0x0" max="0xff" default="0xaa"/>
+          <CONFIG_ELEMENT name="a_11" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0xa" min="0x0" max="0xff" default="0xbb"/>
+          <CONFIG_ELEMENT name="a_12" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0xb" min="0x0" max="0xff" default="0xcc"/>
+          <CONFIG_ELEMENT name="a_13" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0xc" min="0x0" max="0xff" default="0xdd"/>
+          <CONFIG_ELEMENT name="a_14" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0xd" min="0x0" max="0xff" default="0xee"/>
+          <CONFIG_ELEMENT name="a_15" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0xe" min="0x0" max="0xff" default="0xff"/>
+          <CONFIG_ELEMENT name="a_16" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0xf" min="0x0" max="0xff" default="0x10"/>
+          <CONFIG_ELEMENT name="a_17" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x10" min="0x0" max="0xff" default="0x20"/>
+          <CONFIG_ELEMENT name="a_18" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x11" min="0x0" max="0xff" default="0x30"/>
+          <CONFIG_ELEMENT name="a_19" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x12" min="0x0" max="0xff" default="0x40"/>
+          <CONFIG_ELEMENT name="a_20" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x13" min="0x0" max="0xff" default="0x50"/>
+          <CONFIG_ELEMENT name="a_21" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x14" min="0x0" max="0xff" default="0x60"/>
+          <CONFIG_ELEMENT name="a_22" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x15" min="0x0" max="0xff" default="0x70"/>
+          <CONFIG_ELEMENT name="a_23" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x16" min="0x0" max="0xff" default="0x80"/>
+          <CONFIG_ELEMENT name="a_24" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x17" min="0x0" max="0xff" default="0x90"/>
+          <CONFIG_ELEMENT name="a_25" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x18" min="0x0" max="0xff" default="0xa0"/>
+          <CONFIG_ELEMENT name="a_26" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x19" min="0x0" max="0xff" default="0xb0"/>
+          <CONFIG_ELEMENT name="a_27" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x1a" min="0x0" max="0xff" default="0xc0"/>
+          <CONFIG_ELEMENT name="a_28" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x1b" min="0x0" max="0xff" default="0xd0"/>
+          <CONFIG_ELEMENT name="a_29" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x1c" min="0x0" max="0xff" default="0xe0"/>
+          <CONFIG_ELEMENT name="a_30" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x1d" min="0x0" max="0xff" default="0xf0"/>
+          <CONFIG_ELEMENT name="a_31" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x1e" min="0x0" max="0xff" default="0x1"/>
+          <CONFIG_ELEMENT name="a_32" type="unsigned char" typeUnSigned="true" byteSize="0x1" byteOffset="0x1f" min="0x0" max="0xff" default="0x2"/>
+          <CONFIG_ELEMENT name="s1_1_a" type="long" byteSize="0x4" byteOffset="0x20" min="0x80000000" max="0x7fffffff" default="0x44332211"/>
+          <CONFIG_ELEMENT name="s1_1_b" type="short" byteSize="0x2" byteOffset="0x24" min="0x8000" max="0x7fff" default="0x6655"/>
+          <CONFIG_ELEMENT name="s1_1_c" type="short" byteSize="0x2" byteOffset="0x26" min="0x8000" max="0x7fff" default="0x8877"/>
+          <CONFIG_ELEMENT name="s1_2_a" type="long" byteSize="0x4" byteOffset="0x28" min="0x80000000" max="0x7fffffff" default="0xccbbaa99"/>
+          <CONFIG_ELEMENT name="s1_2_b" type="short" byteSize="0x2" byteOffset="0x2c" min="0x8000" max="0x7fff" default="0xeedd"/>
+          <CONFIG_ELEMENT name="s1_2_c" type="short" byteSize="0x2" byteOffset="0x2e" min="0x8000" max="0x7fff" default="0x10ff"/>
+          <CONFIG_ELEMENT name="s1_3_a" type="long" byteSize="0x4" byteOffset="0x30" min="0x80000000" max="0x7fffffff" default="0x50403020"/>
+          <CONFIG_ELEMENT name="s1_3_b" type="short" byteSize="0x2" byteOffset="0x34" min="0x8000" max="0x7fff" default="0x7060"/>
+          <CONFIG_ELEMENT name="s1_3_c" type="short" byteSize="0x2" byteOffset="0x36" min="0x8000" max="0x7fff" default="0x9080"/>
+          <CONFIG_ELEMENT name="s1_4_a" type="long" byteSize="0x4" byteOffset="0x38" min="0x80000000" max="0x7fffffff" default="0xd0c0b0a0"/>
+          <CONFIG_ELEMENT name="s1_4_b" type="short" byteSize="0x2" byteOffset="0x3c" min="0x8000" max="0x7fff" default="0xf0e0"/>
+          <CONFIG_ELEMENT name="s1_4_c" type="short" byteSize="0x2" byteOffset="0x3e" min="0x8000" max="0x7fff" default="0x201"/>
+          <CONFIG_ELEMENT name="s2_x_1" type="long" byteSize="0x4" byteOffset="0x40" min="0x80000000" max="0x7fffffff" default="0x44332211"/>
+          <CONFIG_ELEMENT name="s2_x_2" type="long" byteSize="0x4" byteOffset="0x44" min="0x80000000" max="0x7fffffff" default="0x88776655"/>
+          <CONFIG_ELEMENT name="s2_x_3" type="long" byteSize="0x4" byteOffset="0x48" min="0x80000000" max="0x7fffffff" default="0xccbbaa99"/>
+          <CONFIG_ELEMENT name="s2_x_4" type="long" byteSize="0x4" byteOffset="0x4c" min="0x80000000" max="0x7fffffff" default="0x10ffeedd"/>
+          <CONFIG_ELEMENT name="s2_x_5" type="long" byteSize="0x4" byteOffset="0x50" min="0x80000000" max="0x7fffffff" default="0x50403020"/>
+          <CONFIG_ELEMENT name="s2_x_6" type="long" byteSize="0x4" byteOffset="0x54" min="0x80000000" max="0x7fffffff" default="0x90807060"/>
+          <CONFIG_ELEMENT name="s2_x_7" type="long" byteSize="0x4" byteOffset="0x58" min="0x80000000" max="0x7fffffff" default="0xd0c0b0a0"/>
+          <CONFIG_ELEMENT name="s2_x_8" type="long" byteSize="0x4" byteOffset="0x5c" min="0x80000000" max="0x7fffffff" default="0x201f0e0"/>
+          <CONFIG_ELEMENT name="b" type="char" byteSize="0x1" byteOffset="0x60" min="0x80" max="0x7f" default="0x44"/>
+          <CONFIG_ELEMENT name="c" type="long" byteSize="0x4" byteOffset="0x64" min="0x80000000" max="0x7fffffff" default="0x17654321"/>
+          <CONFIG_ELEMENT name="s3" type="sStruct1_t" byteSize="0x8" byteOffset="0x68" arrayElements="0"
+            arrayDefault="112233445566778899aabbccddeeff102030405060708090a0b0c0d0e0f00102"/>
+          <CONFIG_ELEMENT name="f_1" type="float" byteSize="0x4" byteOffset="0x68" min="-3.402823466E+38" max="3.402823466E+38" default="0"/>
+          <CONFIG_ELEMENT name="f_2" type="float" byteSize="0x4" byteOffset="0x6c" min="-3.402823466E+38" max="3.402823466E+38" default="1"/>
+          <CONFIG_ELEMENT name="f_3" type="float" byteSize="0x4" byteOffset="0x70" min="-3.402823466E+38" max="3.402823466E+38" default="2"/>
+          <CONFIG_ELEMENT name="f_4" type="float" byteSize="0x4" byteOffset="0x74" min="-3.402823466E+38" max="3.402823466E+38" default="3"/>
+          <CONFIG_ELEMENT name="f_5" type="float" byteSize="0x4" byteOffset="0x78" min="-3.402823466E+38" max="3.402823466E+38" default="4"/>
+          <CONFIG_ELEMENT name="f_6" type="float" byteSize="0x4" byteOffset="0x7c" min="-3.402823466E+38" max="3.402823466E+38" default="5"/>
+          <CONFIG_ELEMENT name="f_7" type="float" byteSize="0x4" byteOffset="0x80" min="-3.402823466E+38" max="3.402823466E+38" default="6"/>
+          <CONFIG_ELEMENT name="f_8" type="float" byteSize="0x4" byteOffset="0x84" min="-3.402823466E+38" max="3.402823466E+38" default="7"/>
+          <CONFIG_ELEMENT name="f_9" type="float" byteSize="0x4" byteOffset="0x88" min="-3.402823466E+38" max="3.402823466E+38" default="8"/>
+          <CONFIG_ELEMENT name="f_10" type="float" byteSize="0x4" byteOffset="0x8c" min="-3.402823466E+38" max="3.402823466E+38" default="9"/>
+          <CONFIG_ELEMENT name="f_11" type="float" byteSize="0x4" byteOffset="0x90" min="-3.402823466E+38" max="3.402823466E+38" default="10"/>
+          <CONFIG_ELEMENT name="f_12" type="float" byteSize="0x4" byteOffset="0x94" min="-3.402823466E+38" max="3.402823466E+38" default="11"/>
+          <CONFIG_ELEMENT name="f_13" type="float" byteSize="0x4" byteOffset="0x98" min="-3.402823466E+38" max="3.402823466E+38" default="12"/>
+          <CONFIG_ELEMENT name="f_14" type="float" byteSize="0x4" byteOffset="0x9c" min="-3.402823466E+38" max="3.402823466E+38" default="13"/>
+          <CONFIG_ELEMENT name="f_15" type="float" byteSize="0x4" byteOffset="0xa0" min="-3.402823466E+38" max="3.402823466E+38" default="14"/>
+          <CONFIG_ELEMENT name="f_16" type="float" byteSize="0x4" byteOffset="0xa4" min="-3.402823466E+38" max="3.402823466E+38" default="15"/>
+          <CONFIG_ELEMENT name="f_17" type="float" byteSize="0x4" byteOffset="0xa8" min="-3.402823466E+38" max="3.402823466E+38" default="16"/>
+          <CONFIG_ELEMENT name="f_18" type="float" byteSize="0x4" byteOffset="0xac" min="-3.402823466E+38" max="3.402823466E+38" default="17"/>
+          <CONFIG_ELEMENT name="f_19" type="float" byteSize="0x4" byteOffset="0xb0" min="-3.402823466E+38" max="3.402823466E+38" default="18"/>
+          <CONFIG_ELEMENT name="f_20" type="float" byteSize="0x4" byteOffset="0xb4" min="-3.402823466E+38" max="3.402823466E+38" default="19"/>
+          <CONFIG_ELEMENT name="f_21" type="float" byteSize="0x4" byteOffset="0xb8" min="-3.402823466E+38" max="3.402823466E+38" default="20"/>
+          <CONFIG_ELEMENT name="f_22" type="float" byteSize="0x4" byteOffset="0xbc" min="-3.402823466E+38" max="3.402823466E+38" default="21"/>
+          <CONFIG_ELEMENT name="f_23" type="float" byteSize="0x4" byteOffset="0xc0" min="-3.402823466E+38" max="3.402823466E+38" default="22"/>
+          <CONFIG_ELEMENT name="f_24" type="float" byteSize="0x4" byteOffset="0xc4" min="-3.402823466E+38" max="3.402823466E+38" default="23"/>
+          <CONFIG_ELEMENT name="f_25" type="float" byteSize="0x4" byteOffset="0xc8" min="-3.402823466E+38" max="3.402823466E+38" default="24"/>
+          <CONFIG_ELEMENT name="f_26" type="float" byteSize="0x4" byteOffset="0xcc" min="-3.402823466E+38" max="3.402823466E+38" default="25"/>
+          <CONFIG_ELEMENT name="f_27" type="float" byteSize="0x4" byteOffset="0xd0" min="-3.402823466E+38" max="3.402823466E+38" default="26"/>
+          <CONFIG_ELEMENT name="f_28" type="float" byteSize="0x4" byteOffset="0xd4" min="-3.402823466E+38" max="3.402823466E+38" default="27"/>
+          <CONFIG_ELEMENT name="f_29" type="float" byteSize="0x4" byteOffset="0xd8" min="-3.402823466E+38" max="3.402823466E+38" default="28"/>
+          <CONFIG_ELEMENT name="f_30" type="float" byteSize="0x4" byteOffset="0xdc" min="-3.402823466E+38" max="3.402823466E+38" default="29"/>
+          <CONFIG_ELEMENT name="f_31" type="float" byteSize="0x4" byteOffset="0xe0" min="-3.402823466E+38" max="3.402823466E+38" default="30"/>
+          <CONFIG_ELEMENT name="f_32" type="float" byteSize="0x4" byteOffset="0xe4" min="-3.402823466E+38" max="3.402823466E+38" default="31"/>
+          <CONFIG_ELEMENT name="d_1" type="double" byteSize="0x8" byteOffset="0xe8" min="-1.797693135E+308" max="1.797693135E+308" default="0"/>
+          <CONFIG_ELEMENT name="d_2" type="double" byteSize="0x8" byteOffset="0xf0" min="-1.797693135E+308" max="1.797693135E+308" default="1"/>
+          <CONFIG_ELEMENT name="d_3" type="double" byteSize="0x8" byteOffset="0xf8" min="-1.797693135E+308" max="1.797693135E+308" default="2"/>
+          <CONFIG_ELEMENT name="d_4" type="double" byteSize="0x8" byteOffset="0x100" min="-1.797693135E+308" max="1.797693135E+308" default="3"/>
+          <CONFIG_ELEMENT name="d_5" type="double" byteSize="0x8" byteOffset="0x108" min="-1.797693135E+308" max="1.797693135E+308" default="4"/>
+          <CONFIG_ELEMENT name="d_6" type="double" byteSize="0x8" byteOffset="0x110" min="-1.797693135E+308" max="1.797693135E+308" default="5"/>
+          <CONFIG_ELEMENT name="d_7" type="double" byteSize="0x8" byteOffset="0x118" min="-1.797693135E+308" max="1.797693135E+308" default="6"/>
+          <CONFIG_ELEMENT name="d_8" type="double" byteSize="0x8" byteOffset="0x120" min="-1.797693135E+308" max="1.797693135E+308" default="7"/>
+          <CONFIG_ELEMENT name="d_9" type="double" byteSize="0x8" byteOffset="0x128" min="-1.797693135E+308" max="1.797693135E+308" default="8"/>
+          <CONFIG_ELEMENT name="d_10" type="double" byteSize="0x8" byteOffset="0x130" min="-1.797693135E+308" max="1.797693135E+308" default="9"/>
+          <CONFIG_ELEMENT name="d_11" type="double" byteSize="0x8" byteOffset="0x138" min="-1.797693135E+308" max="1.797693135E+308" default="10"/>
+          <CONFIG_ELEMENT name="d_12" type="double" byteSize="0x8" byteOffset="0x140" min="-1.797693135E+308" max="1.797693135E+308" default="11"/>
+          <CONFIG_ELEMENT name="d_13" type="double" byteSize="0x8" byteOffset="0x148" min="-1.797693135E+308" max="1.797693135E+308" default="12"/>
+          <CONFIG_ELEMENT name="d_14" type="double" byteSize="0x8" byteOffset="0x150" min="-1.797693135E+308" max="1.797693135E+308" default="13"/>
+          <CONFIG_ELEMENT name="d_15" type="double" byteSize="0x8" byteOffset="0x158" min="-1.797693135E+308" max="1.797693135E+308" default="14"/>
+          <CONFIG_ELEMENT name="d_16" type="double" byteSize="0x8" byteOffset="0x160" min="-1.797693135E+308" max="1.797693135E+308" default="15"/>
+          <CONFIG_ELEMENT name="d_17" type="double" byteSize="0x8" byteOffset="0x168" min="-1.797693135E+308" max="1.797693135E+308" default="16"/>
+          <CONFIG_ELEMENT name="d_18" type="double" byteSize="0x8" byteOffset="0x170" min="-1.797693135E+308" max="1.797693135E+308" default="17"/>
+          <CONFIG_ELEMENT name="d_19" type="double" byteSize="0x8" byteOffset="0x178" min="-1.797693135E+308" max="1.797693135E+308" default="18"/>
+          <CONFIG_ELEMENT name="d_20" type="double" byteSize="0x8" byteOffset="0x180" min="-1.797693135E+308" max="1.797693135E+308" default="19"/>
+          <CONFIG_ELEMENT name="d_21" type="double" byteSize="0x8" byteOffset="0x188" min="-1.797693135E+308" max="1.797693135E+308" default="20"/>
+          <CONFIG_ELEMENT name="d_22" type="double" byteSize="0x8" byteOffset="0x190" min="-1.797693135E+308" max="1.797693135E+308" default="21"/>
+          <CONFIG_ELEMENT name="d_23" type="double" byteSize="0x8" byteOffset="0x198" min="-1.797693135E+308" max="1.797693135E+308" default="22"/>
+          <CONFIG_ELEMENT name="d_24" type="double" byteSize="0x8" byteOffset="0x1a0" min="-1.797693135E+308" max="1.797693135E+308" default="23"/>
+          <CONFIG_ELEMENT name="d_25" type="double" byteSize="0x8" byteOffset="0x1a8" min="-1.797693135E+308" max="1.797693135E+308" default="24"/>
+          <CONFIG_ELEMENT name="d_26" type="double" byteSize="0x8" byteOffset="0x1b0" min="-1.797693135E+308" max="1.797693135E+308" default="25"/>
+          <CONFIG_ELEMENT name="d_27" type="double" byteSize="0x8" byteOffset="0x1b8" min="-1.797693135E+308" max="1.797693135E+308" default="26"/>
+          <CONFIG_ELEMENT name="d_28" type="double" byteSize="0x8" byteOffset="0x1c0" min="-1.797693135E+308" max="1.797693135E+308" default="27"/>
+          <CONFIG_ELEMENT name="d_29" type="double" byteSize="0x8" byteOffset="0x1c8" min="-1.797693135E+308" max="1.797693135E+308" default="28"/>
+          <CONFIG_ELEMENT name="d_30" type="double" byteSize="0x8" byteOffset="0x1d0" min="-1.797693135E+308" max="1.797693135E+308" default="29"/>
+          <CONFIG_ELEMENT name="d_31" type="double" byteSize="0x8" byteOffset="0x1d8" min="-1.797693135E+308" max="1.797693135E+308" default="30"/>
+          <CONFIG_ELEMENT name="d_32" type="double" byteSize="0x8" byteOffset="0x1e0" min="-1.797693135E+308" max="1.797693135E+308" default="31"/>
+          <CONFIG_ELEMENT name="smix_a" type="double" byteSize="0x8" byteOffset="0x1e8" min="-1.797693135E+308" max="1.797693135E+308" default="1"/>
+          <CONFIG_ELEMENT name="smix_b" type="longlong" byteSize="0x8" byteOffset="0x1f0" min="0x8000000000000000" max="0x7fffffffffffffff" default="0x2"/>
+          <CONFIG_ELEMENT name="smix_c" type="float" byteSize="0x4" byteOffset="0x1f8" min="-3.402823466E+38" max="3.402823466E+38" default="3"/>
+          <CONFIG_ELEMENT name="smix_d" type="long" byteSize="0x4" byteOffset="0x1fc" min="0x80000000" max="0x7fffffff" default="0x4"/>
+        </PARAMETER>
+      </PARAMETER_LIST>
+    </MODULE>
+  </MODULE_LIST>
+</MODULE_DEF>

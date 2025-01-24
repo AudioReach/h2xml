@@ -1,0 +1,52 @@
+<MODULE_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PROCESSORS/>
+  <MODULE_LIST>
+    <MODULE name="MODULE_1" id="0x11111111">
+      <MODULE_INFO>
+        <DATA_PORT_INFO>
+          <INPUT_PORTS max="0x4"/>
+          <OUTPUT_PORTS max="0x6"/>
+        </DATA_PORT_INFO>
+        <CONTROL_PORT_INFO>
+          <STATIC/>
+          <DYNAMIC/>
+        </CONTROL_PORT_INFO>
+        <CAPABILITIES/>
+        <SUPPORTEDCONTTYPES/>
+        <STACKSIZE stackSize="0x400"/>
+      </MODULE_INFO>
+      <PARAMETER_LIST>
+        <PARAMETER name="Parameter1" pid="0x11111199" maxSize="0xc" isNeuralNetParam="true">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="a" type="unsigned short" typeUnSigned="true" byteSize="0x2" byteOffset="0x0" min="0x0" max="0xffff" default="0x0"/>
+          <CONFIG_ELEMENT name="b" type="int" byteSize="0x4" byteOffset="0x4" min="0x80000000" max="0x7fffffff" default="0x0"/>
+          <CONFIG_ELEMENT name="c" type="int" byteSize="0x4" byteOffset="0x8" min="0x80000000" max="0x7fffffff" default="0x0"/>
+        </PARAMETER>
+        <PARAMETER name="Parameter2" pid="0x22222299" maxSize="0xc" isNeuralNetParam="true">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="a" type="unsigned short" typeUnSigned="true" byteSize="0x2" byteOffset="0x0" min="0x0" max="0xffff" default="0x0"/>
+          <CONFIG_ELEMENT name="b" type="int" byteSize="0x4" byteOffset="0x4" min="0x80000000" max="0x7fffffff" default="0x0"/>
+          <CONFIG_ELEMENT name="c" type="int" byteSize="0x4" byteOffset="0x8" min="0x80000000" max="0x7fffffff" default="0x0"/>
+        </PARAMETER>
+        <PARAMETER name="Parameter3" pid="0x33333399" maxSize="0xc" isNeuralNetParam="false">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="a" type="unsigned short" typeUnSigned="true" byteSize="0x2" byteOffset="0x0" min="0x0" max="0xffff" default="0x0"/>
+          <CONFIG_ELEMENT name="b" type="int" byteSize="0x4" byteOffset="0x4" min="0x80000000" max="0x7fffffff" default="0x0"/>
+          <CONFIG_ELEMENT name="c" type="int" byteSize="0x4" byteOffset="0x8" min="0x80000000" max="0x7fffffff" default="0x0"/>
+        </PARAMETER>
+      </PARAMETER_LIST>
+    </MODULE>
+  </MODULE_LIST>
+</MODULE_DEF>

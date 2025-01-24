@@ -1,0 +1,30 @@
+<KEY_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PLATFORMS/>
+  <KEY_LIST/>
+  <MODULE_TAGS enumName="WX_PLAYBACK_GRAPH_TAG_KEY">
+    <TAG id="0xb0000000" name="RxWrtieShmemEP" enumValue="RxWrtieShmemEP" description="RxWrtieShmemEP"/>
+    <TAG id="0xb0000100" name="PcmDecodeConvOutFormat" enumValue="PcmDecodeConvOutFormat" description="PcmDecodeConvOutFormat"/>
+    <TAG id="0xb0000200" name="StreamRxSourceMfc" enumValue="StreamRxSourceMfc" description="StreamRxSourceMfc"/>
+    <TAG id="0xb0000300" name="StreamRxSinkMfc" enumValue="StreamRxSinkMfc" description="StreamRxSinkMfc"/>
+    <TAG id="0xb0000400" name="StreamPosition" enumValue="StreamPosition" description="StreamPosition"/>
+    <TAG id="0xb0000500" name="DeviceRxSourceMfc" enumValue="DeviceRxSourceMfc" description="DeviceRxSourceMfc"/>
+    <TAG id="0xb0000600" name="DeviceRxSinkMfc" enumValue="DeviceRxSinkMfc" description="DeviceRxSinkMfc"/>
+    <TAG id="0xb0000700" name="StreamRxVolume" enumValue="StreamRxVolume" description="StreamRxVolume"/>
+    <TAG id="0xb0000800" name="StreamRxVolumeRamp" enumValue="StreamRxVolumeRamp" description="StreamRxVolumeRamp"/>
+    <TAG id="0xb0000900" name="StreamRxMute" enumValue="StreamRxMute" description="StreamRxMute"/>
+    <TAG id="0xb0000a00" name="StreamRxMuteRamp" enumValue="StreamRxMuteRamp" description="StreamRxMuteRamp"/>
+    <TAG id="0xb0000b00" name="StreamRxPeakmeter" enumValue="StreamRxPeakmeter" description="StreamRxPeakmeter"/>
+    <TAG id="0xb0000c00" name="DeviceRxPeakmeter" enumValue="DeviceRxPeakmeter" description="DeviceRxPeakmeter"/>
+    <TAG id="0xb0000d00" name="DeviceRxVolume" enumValue="DeviceRxVolume" description="DeviceRxVolume"/>
+    <TAG id="0xb0000e00" name="DeviceRxVolumeRamp" enumValue="DeviceRxVolumeRamp" description="DeviceRxVolumeRamp"/>
+    <TAG id="0xb0000f00" name="DeviceRxMute" enumValue="DeviceRxMute" description="DeviceRxMute"/>
+    <TAG id="0xb0001000" name="DeviceRxMuteRamp" enumValue="DeviceRxMuteRamp" description="DeviceRxMuteRamp"/>
+    <TAG id="0xb0001100" name="EpRxHw" enumValue="EpRxHw" description="EpRxHw"/>
+    <TAG id="0xb0001200" name="EpTxSpkrProtHw" enumValue="EpTxSpkrProtHw" description="EpTxSpkrProtHw"/>
+    <TAG id="0xb0001300" name="SpeakerProtectionRx" enumValue="SpeakerProtectionRx" description="SpeakerProtectionRx"/>
+    <TAG id="0xb0001400" name="SpeakerProtectionTx" enumValue="SpeakerProtectionTx" description="SpeakerProtectionTx"/>
+    <TAG id="0xb0001500" name="StreamRxEos" enumValue="StreamRxEos" description="StreamRxEos"/>
+    <TAG id="0xb0001600" name="RegUnderflowEvt" enumValue="RegUnderflowEvt" description="RegUnderflowEvt"/>
+    <TAG id="0xb0001700" name="RegWaterMarkEvt" enumValue="RegWaterMarkEvt" description="RegWaterMarkEvt"/>
+  </MODULE_TAGS>
+</KEY_DEF>

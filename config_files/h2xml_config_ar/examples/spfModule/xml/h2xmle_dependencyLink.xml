@@ -1,0 +1,53 @@
+<MODULE_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PROCESSORS/>
+  <MODULE_LIST>
+    <MODULE name="MODULE_1" id="0x11111111">
+      <MODULE_INFO>
+        <DATA_PORT_INFO>
+          <INPUT_PORTS max="0x4"/>
+          <OUTPUT_PORTS max="0x6"/>
+        </DATA_PORT_INFO>
+        <CONTROL_PORT_INFO>
+          <STATIC/>
+          <DYNAMIC/>
+        </CONTROL_PORT_INFO>
+        <CAPABILITIES/>
+        <SUPPORTEDCONTTYPES/>
+        <STACKSIZE stackSize="0x400"/>
+      </MODULE_INFO>
+      <PARAMETER_LIST>
+        <PARAMETER name="Parameter1" pid="0x11111199" maxSize="0x14">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="target" type="short" byteSize="0x2" byteOffset="0x0" min="0x8000" max="0x7fff" default="0x0"/>
+          <CONFIG_ELEMENT name="interference" type="short" byteSize="0x2" byteOffset="0x2" arrayElements="5" min="0x8000" max="0x7fff" description="Description"
+            arrayDefault="01000200030004000500">
+            <DEPENDENCY_LINK>
+              <ELEMENT depName="target" depValue="0x1" arrayDefault="01000200030004000500"/>
+              <ELEMENT depName="target" depValue="0x2" arrayDefault="06000700080009000a00"/>
+            </DEPENDENCY_LINK>
+          </CONFIG_ELEMENT>
+          <CONFIG_ELEMENT name="b" type="long" byteSize="0x4" byteOffset="0xc" min="0x5" max="0xa" default="0x5">
+            <DEPENDENCY_LINK>
+              <ELEMENT depName="target" depValue="0x1" min="0xfffffffb" max="0x14"/>
+              <ELEMENT depName="target" depValue="0x2" min="0x5" max="0xa"/>
+              <ELEMENT depName="target" depValue="0x3" default="0xf"/>
+              <ELEMENT depName="target" depValue="0x4" default="0x5"/>
+            </DEPENDENCY_LINK>
+          </CONFIG_ELEMENT>
+          <CONFIG_ELEMENT name="f" type="float" byteSize="0x4" byteOffset="0x10" min="5" max="10" default="5">
+            <DEPENDENCY_LINK>
+              <ELEMENT depName="target" depValue="0x1" min="0xfffffffb" max="2E-09" default="-3.75"/>
+              <ELEMENT depName="target" depValue="0x2" min="0x5" max="0xa"/>
+              <ELEMENT depName="target" depValue="0x3" default="-15.75"/>
+              <ELEMENT depName="target" depValue="0x4" default="5"/>
+            </DEPENDENCY_LINK>
+          </CONFIG_ELEMENT>
+        </PARAMETER>
+      </PARAMETER_LIST>
+    </MODULE>
+  </MODULE_LIST>
+</MODULE_DEF>

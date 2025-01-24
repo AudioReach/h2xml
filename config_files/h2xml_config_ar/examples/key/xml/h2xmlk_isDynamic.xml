@@ -1,0 +1,21 @@
+<KEY_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PLATFORMS/>
+  <KEY_LIST>
+    <KEY name="Key1_Name" id="0xa0000000" enumValue="Key1" enumName="Key_1" description="Description Key1">
+      <VALUE val="0xa0000001" name="key1_val_1" enumValue="key1_val_1" description="Description 101"/>
+      <VALUE val="0xa0000002" name="key1_val_2" enumValue="key1_val_2" description="Description 102"/>
+    </KEY>
+    <KEY name="Key2" id="0xb0000000" enumValue="Key2" enumName="Key_2" isDynamic="true" description="Description Key2">
+      <VALUE val="0xb0000001" name="key2_val_1" enumValue="key2_val_1" description="Description 201"/>
+      <VALUE val="0xb0000002" name="key2_val_2" enumValue="key2_val_2" description="Description 202"/>
+    </KEY>
+    <KEY name="Key3" id="0xc0000000" enumValue="Key3" enumName="Key_3" isDynamic="true" description="Description Key3">
+      <VALUE val="0xc0000001" name="key3_val_1" enumValue="key3_val_1" description="Description 301"/>
+      <VALUE val="0xc0000002" name="key3_val_2" enumValue="key3_val_2" description="Description 302"/>
+    </KEY>
+    <KEY name="Key3" id="0xc0000000" enumValue="Key3" enumName="Key_4" isDynamic="false" description="Description Key4">
+      <VALUE val="0xd0000001" name="key4_val_1" enumValue="key4_val_1" description="Description 401"/>
+      <VALUE val="0xd0000002" name="key4_val_2" enumValue="key4_val_2" description="Description 402"/>
+    </KEY>
+  </KEY_LIST>
+</KEY_DEF>

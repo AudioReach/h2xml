@@ -1,0 +1,38 @@
+<KEY_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PLATFORMS>
+    <PLATFORM name="LA" enumValue="PLATFORM_LA" id="0x1"/>
+    <PLATFORM name="QNX" enumValue="PLATFORM_QNX" id="0x2"/>
+  </PLATFORMS>
+  <KEY_LIST>
+    <KEY name="srate" id="0xa0000000" enumValue="Samplerate" enumName="Key_Samplerate" sampleRate="true" description="Description 10">
+      <VALUE val="0xa0000001" name="samplerate1" enumValue="samplerate1" sampleRate="0x1f40" description="Description 101"/>
+      <VALUE val="0xa0000002" name="samplerate2" enumValue="samplerate2" sampleRate="0x3e80" description="Description 102"/>
+    </KEY>
+    <KEY name="Bitwidth" id="0xb0000000" enumValue="Bitwidth" enumName="Key_Bitwidth" description="Description 20">
+      <VALUE val="0xb0000001" name="bitwidth1" enumValue="bitwidth1" description="Description 201"/>
+      <VALUE val="0xb0000002" name="bitwidth2" enumValue="bitwidth2" description="Description 202"/>
+    </KEY>
+    <KEY name="Channel" id="0xc0000000" enumValue="Channel" enumName="Key_Channel" description="Description 30">
+      <VALUE val="0xc0000001" name="channel1" enumValue="channel1" description="Description 301"/>
+      <VALUE val="0xc0000002" name="channel2" enumValue="channel2" description="Description 302"/>
+    </KEY>
+  </KEY_LIST>
+  <GRAPH_KEY enumName="Graph_Keys" description="Description 40">
+    <KEY id="0xa0000000" name="srate" enumValue="gk_samplerate"/>
+    <KEY id="0xb0000000" name="Bitwidth" enumValue="gk_bitwidth"/>
+  </GRAPH_KEY>
+  <CAL_KEY enumName="Cal_Keys" description="Description 50">
+    <KEY id="0xa0000000" name="srate" enumValue="ck_samplerate"/>
+    <KEY id="0xb0000000" name="Bitwidth" enumValue="ck_bitwidth"/>
+  </CAL_KEY>
+  <MODULE_TAGS>
+    <TAG id="0xe0000000" name="ModuleTag1" enumName="ModuleTag1_Keys" description="Description 60" isVoice="true">
+      <KEY id="0xa0000000" name="srate" enumValue="tk1_samplerate"/>
+      <KEY id="0xb0000000" name="Bitwidth" enumValue="tk1_bitwidth"/>
+    </TAG>
+    <TAG id="0xf0000000" name="ModuleTag2" enumName="ModuleTag2_Keys" description="Description 70">
+      <KEY id="0xa0000000" name="srate" enumValue="tk2_samplerate"/>
+      <KEY id="0xc0000000" name="Channel" enumValue="tk2_channel"/>
+    </TAG>
+  </MODULE_TAGS>
+</KEY_DEF>

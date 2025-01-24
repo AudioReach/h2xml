@@ -1,0 +1,43 @@
+<MODULE_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PROCESSORS/>
+  <MODULE_LIST>
+    <MODULE name="MODULE_1" id="0x11111111">
+      <MODULE_INFO>
+        <DATA_PORT_INFO>
+          <INPUT_PORTS max="0x4"/>
+          <OUTPUT_PORTS max="0x6"/>
+        </DATA_PORT_INFO>
+        <CONTROL_PORT_INFO>
+          <STATIC/>
+          <DYNAMIC/>
+        </CONTROL_PORT_INFO>
+        <CAPABILITIES/>
+        <SUPPORTEDCONTTYPES/>
+        <STACKSIZE stackSize="0x400"/>
+      </MODULE_INFO>
+      <PARAMETER_LIST>
+        <PARAMETER name="Parameter1" pid="0x11111199" maxSize="0x10">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="a" type="unsigned short" typeUnSigned="true" byteSize="0x2" byteOffset="0x0" min="0x0" max="0xffff" default="0x1122"/>
+          <CONFIG_ELEMENT name="b" type="int" byteSize="0x4" byteOffset="0x4" min="0x80000000" max="0x7fffffff" default="0xe89abcdf"/>
+          <CONFIG_ELEMENT name="c" type="float" byteSize="0x4" byteOffset="0x8" min="-3.402823466E+38" max="3.402823466E+38" default="1.2345678E-16"/>
+          <CONFIG_ELEMENT name="d" type="float" byteSize="0x4" byteOffset="0xc" min="-3.402823466E+38" max="3.402823466E+38" default="42"/>
+        </PARAMETER>
+        <PARAMETER name="Parameter2" pid="0x22222299" maxSize="0x10">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="a" type="char" byteSize="0x1" byteOffset="0x0" min="0x80" max="0x7f" default="0x44"/>
+          <CONFIG_ELEMENT name="b" type="long" byteSize="0x4" byteOffset="0x4" min="0x80000000" max="0x7fffffff" default="0x17654321"/>
+          <CONFIG_ELEMENT name="c" type="double" byteSize="0x8" byteOffset="0x8" min="-1.797693135E+308" max="1.797693135E+308" default="4.987E+200"/>
+        </PARAMETER>
+      </PARAMETER_LIST>
+    </MODULE>
+  </MODULE_LIST>
+</MODULE_DEF>

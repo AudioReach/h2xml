@@ -1,0 +1,18 @@
+<KEY_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PLATFORMS/>
+  <KEY_LIST/>
+  <MODULE_TAGS enumName="TEST_TAGS">
+    <TAG id="0x0" name="tag1" enumValue="TAG1" description="Description 1"/>
+    <TAG id="0x1" name="tag2" enumValue="TAG2" description="Description 2"/>
+    <TAG id="0x2" name="tag3" enumValue="TAG3" description="Description 3" enumName="TEST_KEYS1">
+      <KEY name="k21" id="0x15" enumValue="key21" description="Description k21"/>
+      <KEY name="k22" id="0x16" enumValue="key22" description="Description k22"/>
+      <KEY name="k23" id="0x17" enumValue="key23" description="Description k23"/>
+      <KEY name="k24" id="0xa9000000" enumValue="key24" description="Description k24"/>
+    </TAG>
+    <TAG id="0x3" name="tag4" enumValue="TAG4" enumName="TEST_KEYS2" description="Description 4">
+      <KEY name="key3" id="0x0" enumValue="key3"/>
+      <KEY name="key4" id="0x1" enumValue="key4"/>
+    </TAG>
+  </MODULE_TAGS>
+</KEY_DEF>

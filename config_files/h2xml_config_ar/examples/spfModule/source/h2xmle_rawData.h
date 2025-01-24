@@ -1,0 +1,34 @@
+/**************************************************************************//**
+* @file
+* Example for h2xmle_rawData
+*
+* @note Copyright (c) Qualcomm Innovation Center, Inc. All rights reserved.
+*       SPDX-License-Identifier: BSD-3-Clause
+******************************************************************************/
+
+
+/*------------------------------------------------------------------------*//**
+ 	@h2xmlm_module 					{MODULE_1,0x11111111  }			  
+    @h2xmlm_stacksize 				{1024}	
+   	@h2xmlm_dataMaxInputPorts       {4}	
+ 	@h2xmlm_dataMaxOutputPorts      {6}	
+   	@{
+
+----------------------------------------------------------------------------*/
+
+/** @h2xmlp_parameter 			{Parameter1,0x11111199} 
+	@h2xmlx_expandArray			{false}
+*/
+struct param_1{
+	unsigned short knElements;		
+	int b[0];   				
+	/**<
+		@h2xmle_rawData		
+		@h2xmle_displayType {file}	
+	*/
+};
+
+
+
+/** @} */							/* End of Module */						
+

@@ -1,0 +1,22 @@
+<SPF_PROP_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <SG_CFG id="0x10000000" name="CONFIG1" description="Description 1">
+    <PROP name="SG1" id="0x10000001">
+      <CONFIG_ELEMENT name="value1" type="int" byteSize="0x4" byteOffset="0x0" min="0x80000000" max="0x7fffffff" default="0x0"/>
+    </PROP>
+  </SG_CFG>
+  <SG_CFG id="0x20000000" name="CONFIG2" description="Description 2">
+    <PROP name="SG2" id="0x20000001" isVoice="true">
+      <CONFIG_ELEMENT name="value1" type="int" byteSize="0x4" byteOffset="0x0" min="0x80000000" max="0x7fffffff" default="0x0"/>
+    </PROP>
+  </SG_CFG>
+  <SG_CFG id="0x30000000" name="CONFIG3" description="Description 3">
+    <PROP name="SG3" id="0x20000001" isVoice="true">
+      <CONFIG_ELEMENT name="value1" type="int" byteSize="0x4" byteOffset="0x0" min="0x80000000" max="0x7fffffff" default="0x0"/>
+    </PROP>
+  </SG_CFG>
+  <SG_CFG id="0x40000000" name="CONFIG4" description="Description 4">
+    <PROP name="SG4" id="0x40000001" isVoice="false">
+      <CONFIG_ELEMENT name="value1" type="int" byteSize="0x4" byteOffset="0x0" min="0x80000000" max="0x7fffffff" default="0x0"/>
+    </PROP>
+  </SG_CFG>
+</SPF_PROP_DEF>

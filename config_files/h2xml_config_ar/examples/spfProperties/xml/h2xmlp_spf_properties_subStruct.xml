@@ -1,0 +1,21 @@
+<SPF_PROP_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <CONT_CFG id="0x1000" name="APM_PARAM_ID_CONTAINER_CONFIG" description="ID of the parameter to configure the container properties">
+    <PROP isSubStruct="true" name="apm_cont_capability_t">
+      <CONFIG_ELEMENT name="capability_id" type="uint32_t" typeUnSigned="true" byteSize="0x4" byteOffset="0x0" min="0x0" max="0xffffffff" default="0x1"
+        description="Capability ID for this container">
+        <RANGE_LIST>
+          <RANGE name="PP" value="0x0"/>
+          <RANGE name="CD" value="0x1"/>
+          <RANGE name="EP" value="0x2"/>
+          <RANGE name="OLC" value="0x3"/>
+        </RANGE_LIST>
+      </CONFIG_ELEMENT>
+    </PROP>
+    <PROP name="APM_CONTAINER_PROP_ID_CAPABILITY_LIST" id="0x8001011" description="Container property ID for Capability List">
+      <CONFIG_ELEMENT name="num_capability_id" type="uint32_t" typeUnSigned="true" byteSize="0x4" byteOffset="0x0" min="0x1" max="0xffffffff" default="0x1"
+        description="Number of capabilities for this container"/>
+      <CONFIG_ELEMENT name="cont_capability_id_list" type="apm_cont_capability_t" byteSize="0x4" byteOffset="0x4" description="Capability ID list for this#[
+        #] container" variableArraySize="num_capability_id"/>
+    </PROP>
+  </CONT_CFG>
+</SPF_PROP_DEF>

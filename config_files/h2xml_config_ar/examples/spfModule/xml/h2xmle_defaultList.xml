@@ -1,0 +1,60 @@
+<MODULE_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PROCESSORS/>
+  <MODULE_LIST>
+    <MODULE name="MODULE_1" id="0x11111111">
+      <MODULE_INFO>
+        <DATA_PORT_INFO>
+          <INPUT_PORTS max="0x4"/>
+          <OUTPUT_PORTS max="0x6"/>
+        </DATA_PORT_INFO>
+        <CONTROL_PORT_INFO>
+          <STATIC/>
+          <DYNAMIC/>
+        </CONTROL_PORT_INFO>
+        <CAPABILITIES/>
+        <SUPPORTEDCONTTYPES/>
+        <STACKSIZE stackSize="0x400"/>
+      </MODULE_INFO>
+      <PARAMETER_LIST>
+        <PARAMETER name="Parameter1" pid="0x11111199" maxSize="0x58">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="x" type="short" byteSize="0x2" byteOffset="0x0" arrayElements="6" min="0x8000" max="0x7fff"
+            arrayDefault="010002000300040005000600"/>
+          <CONFIG_ELEMENT name="y" type="float" byteSize="0x4" byteOffset="0xc" arrayElements="6" min="0" max="10"
+            arrayDefault="0000803f0000004000004040000080400000a040bdd2403f"/>
+          <CONFIG_ELEMENT name="z" type="double" byteSize="0x8" byteOffset="0x28" arrayElements="6" min="0" max="1.7E+15"
+            arrayDefault="000000000000f03f00000000000000400000000000000840000000000000104000000000000014400000000060e34641"/>
+        </PARAMETER>
+        <PARAMETER name="Parameter2" pid="0x22222299" maxSize="0x58">
+          <TOOL_POLICIES>
+            <POLICY name="RTC"/>
+            <POLICY name="CALIBRATION"/>
+          </TOOL_POLICIES>
+          <DEFAULT_DEPENDENCIES/>
+          <CONFIG_ELEMENT name="x_1" type="short" byteSize="0x2" byteOffset="0x0" min="0x8000" max="0x7fff" default="0x1"/>
+          <CONFIG_ELEMENT name="x_2" type="short" byteSize="0x2" byteOffset="0x2" min="0x8000" max="0x7fff" default="0x2"/>
+          <CONFIG_ELEMENT name="x_3" type="short" byteSize="0x2" byteOffset="0x4" min="0x8000" max="0x7fff" default="0x3"/>
+          <CONFIG_ELEMENT name="x_4" type="short" byteSize="0x2" byteOffset="0x6" min="0x8000" max="0x7fff" default="0x4"/>
+          <CONFIG_ELEMENT name="x_5" type="short" byteSize="0x2" byteOffset="0x8" min="0x8000" max="0x7fff" default="0x5"/>
+          <CONFIG_ELEMENT name="x_6" type="short" byteSize="0x2" byteOffset="0xa" min="0x8000" max="0x7fff" default="0xa"/>
+          <CONFIG_ELEMENT name="y_1" type="float" byteSize="0x4" byteOffset="0xc" min="0" max="10" default="1"/>
+          <CONFIG_ELEMENT name="y_2" type="float" byteSize="0x4" byteOffset="0x10" min="0" max="10" default="2"/>
+          <CONFIG_ELEMENT name="y_3" type="float" byteSize="0x4" byteOffset="0x14" min="0" max="10" default="3"/>
+          <CONFIG_ELEMENT name="y_4" type="float" byteSize="0x4" byteOffset="0x18" min="0" max="10" default="4"/>
+          <CONFIG_ELEMENT name="y_5" type="float" byteSize="0x4" byteOffset="0x1c" min="0" max="10" default="5"/>
+          <CONFIG_ELEMENT name="y_6" type="float" byteSize="0x4" byteOffset="0x20" min="0" max="10" default="0.753215611"/>
+          <CONFIG_ELEMENT name="z_1" type="double" byteSize="0x8" byteOffset="0x28" min="0" max="1.7E+15" default="1"/>
+          <CONFIG_ELEMENT name="z_2" type="double" byteSize="0x8" byteOffset="0x30" min="0" max="1.7E+15" default="2"/>
+          <CONFIG_ELEMENT name="z_3" type="double" byteSize="0x8" byteOffset="0x38" min="0" max="1.7E+15" default="3"/>
+          <CONFIG_ELEMENT name="z_4" type="double" byteSize="0x8" byteOffset="0x40" min="0" max="1.7E+15" default="4"/>
+          <CONFIG_ELEMENT name="z_5" type="double" byteSize="0x8" byteOffset="0x48" min="0" max="1.7E+15" default="5"/>
+          <CONFIG_ELEMENT name="z_6" type="double" byteSize="0x8" byteOffset="0x50" min="0" max="1.7E+15" default="3000000"/>
+        </PARAMETER>
+      </PARAMETER_LIST>
+    </MODULE>
+  </MODULE_LIST>
+</MODULE_DEF>

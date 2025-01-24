@@ -1,0 +1,46 @@
+<KEY_DEF versionMajor="0x0" versionMinor="0x0" versionBranch="0x0" versionSubBranch="0x0">
+  <PLATFORMS>
+    <PLATFORM name="LA" enumValue="PLATFORM_LA" id="0x1"/>
+    <PLATFORM name="QNX" enumValue="PLATFORM_QNX" id="0x2"/>
+  </PLATFORMS>
+  <KEY_LIST>
+    <KEY name="srate" id="0xa0000000" enumValue="Samplerate" enumName="Key_Samplerate" sampleRate="true" description="Description 10">
+      <VALUE val="0xa0001d01" name="Kv_SampleRate_8000" enumValue="Kv_SampleRate_8000" sampleRate="0x1f40" description="Kv_SampleRate_8000"/>
+      <VALUE val="0xa0001d02" name="Kv_SampleRate_11025" enumValue="Kv_SampleRate_11025" sampleRate="0x2b11" description="Kv_SampleRate_11025"/>
+      <VALUE val="0xa0001d03" name="Kv_SampleRate_12000" enumValue="Kv_SampleRate_12000" sampleRate="0x2ee0" description="Kv_SampleRate_12000"/>
+      <VALUE val="0xa0001d04" name="Kv_SampleRate_16000" enumValue="Kv_SampleRate_16000" sampleRate="0x3e80" description="Kv_SampleRate_16000"/>
+      <VALUE val="0xa0001d05" name="Kv_SampleRate_22050" enumValue="Kv_SampleRate_22050" sampleRate="0x5622" description="Kv_SampleRate_22050"/>
+      <VALUE val="0xa0001d06" name="Kv_SampleRate_24000" enumValue="Kv_SampleRate_24000" sampleRate="0x5dc0" description="Kv_SampleRate_24000"/>
+      <VALUE val="0xa0001d07" name="Kv_SampleRate_32000" enumValue="Kv_SampleRate_32000" sampleRate="0x7d00" description="Kv_SampleRate_32000"/>
+      <VALUE val="0xa0001d08" name="Kv_SampleRate_44100" enumValue="Kv_SampleRate_44100" sampleRate="0xac44" description="Kv_SampleRate_44100"/>
+      <VALUE val="0xa0001d09" name="Kv_SampleRate_48000" enumValue="Kv_SampleRate_48000" sampleRate="0xbb80" description="Kv_SampleRate_48000"/>
+      <VALUE val="0xa0001d0a" name="Kv_SampleRate_88200" enumValue="Kv_SampleRate_88200" sampleRate="0x15888" description="Kv_SampleRate_88200"/>
+      <VALUE val="0xa0001d0b" name="Kv_SampleRate_96000" enumValue="Kv_SampleRate_96000" sampleRate="0x17700" description="Kv_SampleRate_96000"/>
+      <VALUE val="0xa0001d0c" name="Kv_SampleRate_176400" enumValue="Kv_SampleRate_176400" sampleRate="0x2b110" description="Kv_SampleRate_176400"/>
+      <VALUE val="0xa0001d0d" name="Kv_SampleRate_192000" enumValue="Kv_SampleRate_192000" sampleRate="0x2ee00" description="Kv_SampleRate_192000"/>
+      <VALUE val="0xa0001d0e" name="Kv_SampleRate_352800" enumValue="Kv_SampleRate_352800" sampleRate="0x56220" description="Kv_SampleRate_352800"/>
+      <VALUE val="0xa0001d0f" name="Kv_SampleRate_384000" enumValue="Kv_SampleRate_384000" sampleRate="0x5dc00" description="Kv_SampleRate_384000"/>
+    </KEY>
+    <KEY name="K_BitWidth" id="0xb0000000" enumValue="K_BitWidth" enumName="KV_BITWIDTH" description="Signal Bit Width.">
+      <VALUE val="0xa0001e01" name="Kv_BitWidth_16" enumValue="Kv_BitWidth_16" description="Kv_BitWidth_16"/>
+      <VALUE val="0xa0001e02" name="Kv_BitWidth_24" enumValue="Kv_BitWidth_24" description="Kv_BitWidth_24"/>
+      <VALUE val="0xa0001e03" name="Kv_BitWidth_32" enumValue="Kv_BitWidth_32" description="Kv_BitWidth_32"/>
+    </KEY>
+  </KEY_LIST>
+  <MODULE_TAGS>
+    <TAG id="0xe0000000" name="ModuleTag1" enumName="ModuleTag1_Keys" description="Description 60">
+      <KEY id="0xa0000000" name="srate" enumValue="tk1_samplerate">
+        <IGNORE name="Kv_SampleRate_11025" id="0xa0001d02"/>
+        <IGNORE name="Kv_SampleRate_44100" id="0xa0001d08"/>
+      </KEY>
+      <KEY id="0xb0000000" name="K_BitWidth" enumValue="tk1_bitwidth"/>
+    </TAG>
+    <TAG id="0xf0000000" name="ModuleTag2" enumName="ModuleTag2_Keys" description="Description 70">
+      <KEY id="0xa0000000" name="srate" enumValue="tk2_samplerate">
+        <INCLUDE name="Kv_SampleRate_11025" id="0xa0001d02"/>
+        <INCLUDE name="Kv_SampleRate_44100" id="0xa0001d08"/>
+      </KEY>
+      <KEY id="0xb0000000" name="K_BitWidth" enumValue="tk2_bitwidth"/>
+    </TAG>
+  </MODULE_TAGS>
+</KEY_DEF>
